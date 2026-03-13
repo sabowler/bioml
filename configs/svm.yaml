@@ -1,0 +1,12 @@
+# SVM configuration
+outcome_col: "Case-control status"
+drop_cols: ["Event", "Patient ID", "Case ID"]
+test_size: 0.33
+random_state: 42
+corr_threshold: 0.75
+output_dir: "results"
+cv_folds: 5
+param_grid:
+  estimator__kernel: ["rbf", "linear"]
+  estimator__C: [0.01, 0.1, 1.0, 10.0]
+  estimator__gamma: [0.01, 0.1, 1.0]

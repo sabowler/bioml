@@ -1,0 +1,11 @@
+# Neural Network configuration
+outcome_col: "Case-control status"
+drop_cols: ["Event", "Patient ID", "Case ID"]
+test_size: 0.33
+random_state: 42
+corr_threshold: 0.75
+output_dir: "results"
+epochs: 150
+batch_size: 10
+optimizer: "adam"
+loss: "binary_crossentropy"
